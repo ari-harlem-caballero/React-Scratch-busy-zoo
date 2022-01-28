@@ -38,13 +38,13 @@ function App() {
         <Parade animals={animalParade} />
         <div className='animal-buttons'>
           <button onClick={() => setAnimalParade([...animalParade, 'hippo'])}>Add Hippo</button>
-          <button>Add Rhino</button>
-          <button>Add Hedgehog</button>
-          <button>Add Reindeer</button>
-          <button>Add Rabbit</button>
-          <button>Add Sheep</button>
-          <button>Add Llama</button>
-          <button>Add Skunk</button>
+          <button onClick={() => setAnimalParade([...animalParade, 'rhino'])}>Add Rhino</button>
+          <button onClick={() => setAnimalParade([...animalParade, 'hedgehog'])}>Add Hedgehog</button>
+          <button onClick={() => setAnimalParade([...animalParade, 'reindeer'])}>Add Reindeer</button>
+          <button onClick={() => setAnimalParade([...animalParade, 'rabbit'])}>Add Rabbit</button>
+          <button onClick={() => setAnimalParade([...animalParade, 'sheep'])}>Add Sheep</button>
+          <button onClick={() => setAnimalParade([...animalParade, 'llama'])}>Add Llama</button>
+          <button onClick={() => setAnimalParade([...animalParade, 'skunk'])}>Add Skunk</button>
         </div>
       </section>
     </div>
