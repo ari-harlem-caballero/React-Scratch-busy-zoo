@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import Sign from './components/Sign';
+import Parade from './components/Parade';
 
 function App() {
   const [crabSize, setCrabSize] = useState(10);
@@ -34,8 +35,9 @@ function App() {
       </section>
 
       <section className='parade'>
+        <Parade animals={animalParade} />
         <div className='animal-buttons'>
-          <button>Add Hippo</button>
+          <button onClick={() => setAnimalParade([...animalParade, 'hippo'])}>Add Hippo</button>
           <button>Add Rhino</button>
           <button>Add Hedgehog</button>
           <button>Add Reindeer</button>
