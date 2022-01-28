@@ -38,7 +38,7 @@ function App() {
           <button>Add Hippo</button>
           <button>Add Rhino</button>
           <button>Add Hedgehog</button>
-          <button>Add Deer</button>
+          <button>Add Reindeer</button>
           <button>Add Rabbit</button>
           <button>Add Sheep</button>
           <button>Add Llama</button>
