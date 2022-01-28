@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import Sign from './components/Sign';
 
 function App() {
   const [crabSize, setCrabSize] = useState(10);
@@ -25,9 +26,10 @@ function App() {
       </section>
 
       <section className='sign'>
+        <Sign isOpen={isOpen} />
         <div>
-          <button>Close Zoo</button>
-          <button>Open Zoo</button>
+          <button onClick={() => setIsOpen(false)}>Close Zoo</button>
+          <button onClick={() => setIsOpen(true)}>Open Zoo</button>
         </div>
       </section>
 
