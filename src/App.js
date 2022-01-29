@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import './App.css';
-import backgroundImage from './backgroundImage.jpg';
 import Sign from './components/Sign';
 import Parade from './components/Parade';
 
