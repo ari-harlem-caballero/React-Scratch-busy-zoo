@@ -1,23 +1,24 @@
-.App {
-  text-align: center;
+html, body, #root, .App {
+  height: 100%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: url(backgroundImage.jpg);
+  background-size: cover;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -31,4 +32,106 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.75);
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
+  padding: 5px;
+  background: -webkit-linear-gradient(-45deg, #000000 10%, #A46813 65%, #E4BB3F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fight {
+  height: 30%;
+  margin: 10px 0;
+  background-color: rgba(255, 255, 255, 0.75);
+  width: 90%;
+  border-radius: 20px;
+}
+
+.action {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.crab {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.squid {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.crab button, .squid button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+  padding: 3px;
+}
+
+.crab p, .squid p {
+  margin: 0;
+}
+
+.sign {
+  height: 22%;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 20px;
+}
+
+.zoo-sign {
+  font-size: 40px;
+  margin-top: 20px;
+  color: #ca882a;
+  text-shadow: 2.5px 2.2px rgb(43, 43, 43);
+}
+
+.sign button {
+  margin: 20px 20px 0 20px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.parade {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 20px;
+  height: 34%;
+  width: 90%;
+  margin-top: 10px;
+}
+
+.animal-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin: 15px 0;
+  flex-wrap: wrap;
+}
+
+.animal-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }

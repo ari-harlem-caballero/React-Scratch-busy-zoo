@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Sign(props) {
-  return <div>
+  return <div className='zoo-sign'>
     {
       props.isOpen
         ? 'Zoo is OPEN'
