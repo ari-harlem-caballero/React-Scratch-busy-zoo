@@ -84,6 +84,7 @@ h1 {
   align-items: center;
   margin: 3px;
   padding: 3px;
+  /* fixed */
 }
 
 .crab p, .squid p {
